@@ -1,0 +1,133 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Kieu dang
+ */
+/* #web {
+    
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+#nav {
+    
+}
+/* truy cập vào tất cả thẻ li là con trực tiếp của nav */
+/* #nav > li{
+    display: inline-block;
+} */
+
+/* truy cập tất cả thẻ li trong nav */
+/* #nav li {
+    line-height: 46px;
+    position: relative;
+} */
+
+/* truy cập vào thẻ a là con li và li con nav */
+/* #nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+} */
+
+/* truy cập vào tất cả thẻ a là con li và li con nav */
+/* #nav li a{
+    /* bỏ dấu gạch chânchân */
+    /* text-decoration: none;
+   display: block;
+    padding: 0 24px;
+} */ 
+
+/* hien thi khi di chuot vao */
+/* #nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+} */
+
+/* làm các mục nhỏ của phần more */
+/* #nav .subnav{
+    min-width: 160px;
+    position: absolute;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0 ,0 , 0, 0.3) ;
+    display: none;
+} */
+/* truy cap vao a la con cua subnav, subnav la con cua nav */
+/* #nav .subnav a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px ;
+   
+} */
+/* 
+#nav li:hover .subnav{
+    display: block;
+} */
+
+
+/* #nav .subnav li:hover {
+    background-color: #ccc;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#slider {
+    
+}
+
+#content {
+
+}
+
+#footer {
+
+} */ 
+/* #nav .abc{
+    font-size: 14px;
+ }
+ #header .search-btn{
+    float: right;
+    padding: 0 21px;
+ }
+ #header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    
+ }
+ #header .search-btn:hover{
+    background-color:#f44336;
+   cursor: pointer;
+ } */
+ /* li>
+                <a href="">
+                    More
+                    <i class="abc ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Extras</a></li>
+                    <li><a href="">Media</a></li>
+                </ul>
+            </li>
+           </ul>
+           <!-- end nav -->
+           <!-- begin: search button -->
+           <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+           </div>
+           <!-- end: search button -->
+        </div> */

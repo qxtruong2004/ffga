@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* phan class chung */
+.text-white{
+    color: #fff !important;
+}
+.clear{
+    clear: both;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third{
+   
+    width: calc(100%/3);
+}
+.col-half{
+   
+    width: calc(100%/2); 
+}
+
+.col-full{
+    width: 100%;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+/* phan mian */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+    z-index: 1;
+    
+}
+#nav{
+    display: inline-block;
+}
+#nav > li > a{
+    text-transform: uppercase;
+}
+#nav li{
+    /* chuyen tu hang doc sang hang ngang */
+    display: inline-block;
+    position: relative;
+}
+#nav li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 24px;
+    /* can chu  */
+    line-height: 46px;
+}
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+    display: block;
+}
+/* de chinh phan con cua more */
+#nav .subnav {
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;  
+    display: none;
+    box-shadow: 0 0 10px rgba(0 ,0 , 0, 0.3) ;
+}
+#nav .subnav a{
+    color: #000;
+    line-height: 38px;
+}
+#nav li:hover .subnav{
+    display: block;
+    background-color: #fff;
+} 
+ #nav .subnav li:hover {
+    background-color: #ccc;
+  width: 100%;
+ }
+ #nav .nav-button{
+    font-size: 13px;
+ }
+ #header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+ }
+ #header .mobile-menu-btn,
+ #header .nav-search{
+    color: #fff;
+    float: right;
+    font-size: 15px;
+    line-height: 46px;
+    padding: 0 21px;
+ }
+ #header .mobile-menu-btn:hover{
+    background-color: #ccc;
+ }
+ #header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+ }
+
+ #header .nav-search:hover{
+    cursor: pointer;
+    background-color: red;
+ }
+ #slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/ny.jpg') top center / cover no-repeat;
+    position: relative;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow:0 0 2px #000;
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#content .section-heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+#content .section-sub-heading{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+#content .about-text{
+    font-size: 15px;
+   text-align:  justify;
+   line-height: 1.4;
+}
+/* xu li anh */
+#content .members-list{
+    padding-top: 32px;
+}
+
+#content .member-item{
+    
+    text-align: center;
+    
+}
+#content .member-name{
+    
+    font-size: 15px;
+    margin: 15px 0;
+}
+#content .member-img{
+    width: 154px;
+    border-radius: 4px;
+}
+/* Begin tour */
+.tour-section{
+    background-color: #000;
+}
+.ticket-list{
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.ticket-list li{
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+    list-style-type: none;
+}
+.ticket-list .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 2px 8px;
+}
+.ticket-list .quanlity{
+    color: #fff;
+    background-color: #000;
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    margin: -3px;
+}
+/* place */
+.place-list{
+   margin-top: 16px;
+   margin-bottom: 48px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    background-color: #fff;
+    padding:16px ;
+    font-size: 15px;
+}
+.place-heading{
+    font-weight:600 ;
+}
+.place-time{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+.place-desc{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* de can giua phan sau khi bam vao buy tickets */
+    
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container{
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+}
+/* chinh sua nut close */
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+.modal-close:hover{
+    color: #000;
+    background-color: #757575;
+}
+/* chinh sua modal header */
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+}
+.moder-heading-icon{
+    margin-right: 16px;
+}
+/* chinh sua phan lable */
+.modal-body{
+    padding: 0 16px;
+}
+.modal-lable{
+    display: block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.modal-input{
+    border: 0.8px solid green;
+    padding: 10px;
+    width: 100%;
+}
+/* chinh sua phan pay */
+#buy-tickets{
+    margin: 16px 0px;
+    padding: 15px;
+    border-style: none;
+    width: 100%;
+    color: #fff;
+    background-color: #009688;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/* chinh sua footer */
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    margin: 15px 0px;
+}
+.modal-footer a{
+    color: aqua;
+}
+/* End tour */
+/* begin contact */
+.contact-content{
+    margin-top: 47px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border:1px solid #ccc ;
+    width: 100%;
+}
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    padding: 10px 16px;
+    border: none;
+    background-color:#000;
+    color: #fff;
+    float: right;
+}
+.contact-form .form-submit-btn:hover{
+    background-color: #ccc;
+   cursor: pointer;
+}
+/* end contact */
+/* begin map */
+.content-image img{
+    width: 100%;
+}
+/* end map */
+/* begin footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+.copyright{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #000;
+    color: rgba(0, 0, 0, 0.6);
+}
+.copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social-list{
+    font-size: 24px;
+    text-decoration: none;
+}
+#footer .social-list a:hover{
+    opacity: 0.60
+}
+#footer .social-list a{
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+/* end footer */
